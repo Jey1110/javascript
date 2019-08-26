@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            firstName: "John",
+            lastName: "Lee",
+            age: 30,
+            fullName: function(){
+                return this.firstName + "," + this.lastName;
+            }
+
+        }
+        console.log(person.firstName); //이런식으로 표현가능(밑에도 다른 표현방식들이 쭉 있음)
+        console.log(person["age"])
+        let selection = "firstName";
+        console.log(person[selection]);
+
+        let color = ["red", "blue", "yellow", 1];
+        console.log(color[0]);
+        let persons = {
+        { name: "John", age: 30 },
+        { name: "Mary", age: 35 }
+        }  
+        console.log(persons[1].name)
+
+        sum(); //선언되어지기 전에 호출 가능(선언이 밑에 되어있다.)
+
+        function sum() {
+            console.log(5 + 4);
+        }
+
+
+    </script>
+</body>
+
+</html>

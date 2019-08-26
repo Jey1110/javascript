@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button id="gugudan" onclick="gugudan(5)">gugudan</button>
+    <script>
+    // document.getElementById('demo').innerText = "Hello <b>World</b>";
+    var $doc = document.getElementById('gugudan');//또는 var $doc = document.getElementsByTagName('button')[0];
+    //  document.getElementById('btn1');
+    console.log($doc);
+    $dog.onclick = gugudan; //gugudan(); 이라고 적어버리면 즉시 실행되어버리기 때문에 onclick 되기도 전에 실행된다.
+        // console.log(5 + 6);
+        function gugudan(dan){
+        for (var i = 2; i <= dan; i++) {
+            for (var j = 1; j <= 9; j++) {
+                document.write(i+"*"+j+"="+i*j+"<br>");
+            }
+        }
+    }
+        window.alert("Hello");
+    </script>
+</body>
+
+</html>
